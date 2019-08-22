@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    padding: 20px;
+    margin: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    background: gray;
+    border-radius: 10px;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: cornflowerblue;
+    border-radius: 50%;
+    color: #fff;
+    margin: 10px;
+}
+
+.nav a.active {
+    background: darkblue;
+}

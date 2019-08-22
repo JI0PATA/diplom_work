@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    transition: .4s;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.smile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+
+.green {
+    background: greenyellow;
+    border-color: green;
+}
+
+.middle {
+    background: yellow;
+    border-color: orange;
+}
+
+.red {
+    background: palevioletred;
+    border-color: crimson;
+}
+
+.eyes {
+    width: 65%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eye {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.green .eye {
+    background: green;
+}
+
+.middle .eye {
+    background: orange;
+}
+
+.red .eye {
+    background: crimson;
+}
+
+.month {
+    width: 65%;
+    margin: -10px auto;
+    height: 15px;
+}
+
+.middle .month {
+    background: orange;
+    border-radius: 30px;
+}
+
+.green .month {
+    background: green;
+    border-radius: 0 0 100px 100px;
+}
+
+.red .month {
+    background: crimson;
+    border-radius: 100px 100px 0 0;
+}

@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.smile {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 100%;
+    transition: background .5s ease-in-out, border-color .5s ease-in-out;
+}
+
+.smile.green {
+    background: #a9db7a;
+    border-color: #92c562;
+}
+.smile.yellow {
+    background: #eed16b;
+    border-color: #dbae50;
+}
+.smile.red {
+    background: #ee9295;
+    border-color: #e47279;
+}
+
+.eye {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    transition: background .5s ease-in-out;
+}
+.eye.left {
+    left: 33%;
+}
+.eye.right {
+    left: 66%;
+}
+
+.mouth {
+    width: 220px;
+    height: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 70%;
+    transition: all .5s ease-in-out;
+}
+
+.smile.green .eye {
+    background: #83b458;
+}
+.smile.green .mouth {
+    background: #83b459;
+    border-radius: 0 0 100px 100px;
+}
+
+.smile.yellow .eye {
+    background: #daa652;
+}
+.smile.yellow .mouth {
+    background: #daa652;
+    border-radius: 20px;
+}
+
+.smile.red .eye {
+    background: #d96065;
+}
+.smile.red .mouth {
+    background: #d96067;
+    border-radius: 100px 100px 0 0;
+}
+
+.buttons {
+    position: absolute;
+    left: 50%;
+    bottom: -120px;
+    transform: translate(-50%, -50%);
+}
+button {
+    padding: 10px;
+}
