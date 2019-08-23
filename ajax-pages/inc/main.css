@@ -1,0 +1,16 @@
+.site-content-contain {
+    overflow-x: hidden;
+}
+
+#content {
+    position: relative;
+    transition: all .5s ease-in-out;
+
+    opacity: 0;
+    transform: translateX(-1000px);
+}
+
+#content.page-opened {
+    opacity: 1;
+    transform: translateX(0px);
+}
