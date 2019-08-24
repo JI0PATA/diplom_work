@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script defer src="assets/js/vue.js"></script>
+    <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <div v-if="page === 'events'" class="page page-events">
+            <h2>Events</h2>
+
+            <div class="list">
+                <div @click="selectEvent(event)" v-for="event in events" class="list-item">
+                    {{ event.title }}
+                </div>
+            </div>
+
+            <button @click="addEvent">Add event</button>
+        </div>
+
+        <div v-if="page === 'event'" class="page page-events">
+            <h2>Event №{{ selectedEvent.id }}</h2>
+
+            <p>
+                {{ selectedEvent.title }}
+            </p>
+        </div>
+
+        <div v-if="page === 'add_event'">
+            <h2>Adding new event</h2>
+
+            <form @submit.prevent="createEvent">
+                <input type="text" placeholder="id" v-model="creatingEvent.id">
+                <input type="text" placeholder="title" v-model="creatingEvent.title">
+
+                <button>Add</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
